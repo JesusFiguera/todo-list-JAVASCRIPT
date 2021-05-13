@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+    <!--Contenedor para posicionar la barra de busqueda-->
+    <div class="buscador">
+        <input onkeydown="buscar(event)" type="text" placeholder="Buscar todo" id="buscar">
+    </div>
+<!--Barra de navegacion -->
+    <nav>
+        <ul>
+            <li class="nav-links"><a href="prueba.html">Perfil</a></li>
+            <li class="nav-links"><a href="#">Pendientes</a></li>
+            <li class="nav-buttons"><button class="voice">Comando de Voz</button></li>
+        </ul>
+    </nav>
+    <!--Formulario para crear los pendientes-->
+    <form action="" id="form">
+        <div class="contenedor">
+            <!-- <label for="titulo">Titulo</label>-->
+            <input placeholder="Titulo" type="text" name="titulo" id="titulo" autocomplete="off">
+            <!--<label for="descripcion">Descripcion</label>-->
+            <input placeholder="Descripcion" type="text" name="descripcion" id="descripcion" autocomplete="off">
+            <button type="submit" id="btn-crear">Crear</button>
+        </div>
+    </form>
+    <!--COntenedor para ir mostrando cada pendiente generado-->
+    <div class="box">
+        <section class="contenido" id="todos">
+        </section>
+    </div>
+</body>
+<script src="/static/index.js"></script>
+</html>
